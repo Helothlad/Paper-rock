@@ -12,6 +12,7 @@ namespace Rockpaper
 
         public static void MainMenu()
         {
+            Console.Clear();
             Console.WriteLine("Welcome to Rock Paper Scissors: \n");
             Console.WriteLine("1. Play: ");
             Console.WriteLine("2. Scoreboard: ");
@@ -27,8 +28,8 @@ namespace Rockpaper
             
             if (number == 1)
             {
-                
-                Game.startGame();
+
+                Login_Register.UserAction();
             }
             else if (number == 2)
             {
@@ -37,7 +38,7 @@ namespace Rockpaper
             }
             else
             {
-                Console.WriteLine("Rossz input");
+                Console.WriteLine("Goodbye");
             }
         }
     }

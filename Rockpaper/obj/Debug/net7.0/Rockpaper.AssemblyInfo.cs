@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rockpaper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80a727383e4303a698d5e41b6f50199f4ebe6c0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rockpaper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rockpaper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

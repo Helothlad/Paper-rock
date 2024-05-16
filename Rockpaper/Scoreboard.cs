@@ -12,8 +12,8 @@ namespace Rockpaper
         public static void displayScoreboard()
         {
             Console.Clear();
-            string connectionString = "Data Source=DESKTOP-V3T8DSI\\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True;";
-            string sqlQuery = "SELECT * FROM Scoreboard ORDER BY Points DESC";
+            string connectionString = "Data Source=MYPC\\SQLEXPRESS01;Initial Catalog=ChrisDB;Integrated Security=True;";
+            string sqlQuery = "SELECT Name, TimeColumn, Points FROM Scoreboard ORDER BY Points DESC";
             using(SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -27,7 +27,7 @@ namespace Rockpaper
 
                             if(i == 1)
                             {
-                                Console.Write(reader.GetName(i) + "\t\t\t");
+                                Console.Write(reader.GetName(i) + "\t");
                             }
                             else
                             {
@@ -49,7 +49,13 @@ namespace Rockpaper
                     }
                 }
             }
-            Console.ReadLine();
+            Console.WriteLine();
+            
+
+            BackToMainMenu.BackToMainMenuFunction();
+
+
         }
+        
     }
 }
